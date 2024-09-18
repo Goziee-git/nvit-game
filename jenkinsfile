@@ -36,7 +36,7 @@ pipeline {
             steps {
                 script {
                     // Deploy using the manifest.yaml file
-                    sh 'kubectl apply -f manifest.yaml'
+                    sh 'microk8s kubectl apply -f manifest.yaml'
                 }
             }
         }
